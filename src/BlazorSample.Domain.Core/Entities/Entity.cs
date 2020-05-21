@@ -1,5 +1,4 @@
 using System;
-using BlazorSample.Domain.Core.Interfaces.Entities;
 using FluentValidation;
 using FluentValidation.Results;
 

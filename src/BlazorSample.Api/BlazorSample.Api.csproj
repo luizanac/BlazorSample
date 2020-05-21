@@ -4,5 +4,16 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="3.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorSample.Front\BlazorSample.Front.csproj" />
+    <ProjectReference Include="..\BlazorSample.Infra.Data\BlazorSample.Infra.Data.csproj" />
+    <ProjectReference Include="..\BlazorSample.Infra.CrossCutting.IoC\BlazorSample.Infra.CrossCutting.IoC.csproj" />
+  </ItemGroup>
+
 
 </Project>
