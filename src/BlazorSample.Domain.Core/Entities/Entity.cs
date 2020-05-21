@@ -4,7 +4,7 @@ using FluentValidation;
 using FluentValidation.Results;
 
 namespace BlazorSample.Domain.Core.Entities {
-    public abstract class Entity : IEntity {
+    public abstract class Entity {
         public Guid Id { get; protected set; }
         public bool Valid { get; private set; }
         public bool Invalid => !Valid;
@@ -44,10 +44,6 @@ namespace BlazorSample.Domain.Core.Entities {
 
         public override string ToString () {
             return GetType ().Name + " [Id=" + Id + "]";
-        }
-
-        public bool IsValid () {
-            throw new NotImplementedException ();
         }
     }
 }
